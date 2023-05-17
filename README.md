@@ -7,13 +7,19 @@ It's assumed that `pyenv` is used for `virtualenv`.
 ```shell
 pyenv install 3.9.6
 pyenv virtualenv 3.9.6 llm
-pyenv activate
+pyenv activate llm
 pip install -r requirements.txt
 ```
 
 To use OpenAI either pass it in the constructor, set the `OPENAI_API_KEY`
 environment variable, or create the file `~/.openai_api_key` with your key in
-it.
+it. If you use `direnv` do
+
+```shell
+cp .env.sample .env
+# update key in .env
+direnv allow
+```
 
 ## Starting Jupyter
 
