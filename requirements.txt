@@ -1,0 +1,5 @@
+guidance
+jupyter
+jupyterlab
+jupyterlab-lsp
+python-language-server
